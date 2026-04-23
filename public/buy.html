@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GoreKthron — Купить лицензию</title>
+  <meta name="description" content="Купить лицензию GoreKthron — Minecraft Cheat Client" />
+  <link rel="icon" href="favicon.ico" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700&family=Rajdhani:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- ══ NAV ══════════════════════════════════════════════════════ -->
+<nav>
+  <a href="index.html" class="nav-logo">GOREKTHRON</a>
+  <ul class="nav-links">
+    <li><a href="index.html#features" data-i18n="nav_features">Функции</a></li>
+    <li><a href="index.html#pricing" data-i18n="nav_pricing">Цены</a></li>
+    <li><a href="index.html#faq" data-i18n="nav_faq">FAQ</a></li>
+  </ul>
+  <div class="nav-right">
+    <div class="lang-switcher">
+      <button class="lang-btn" data-lang="ru">RU</button>
+      <button class="lang-btn" data-lang="en">EN</button>
+    </div>
+    <button class="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- Mobile Menu -->
+<div class="mobile-menu">
+  <button class="mobile-close">✕</button>
+  <a href="index.html#features" data-i18n="nav_features">Функции</a>
+  <a href="index.html#pricing" data-i18n="nav_pricing">Цены</a>
+  <a href="index.html#faq" data-i18n="nav_faq">FAQ</a>
+</div>
+
+<!-- ══ BUY PAGE ══════════════════════════════════════════════════ -->
+<div class="buy-page-wrap">
+
+  <div class="buy-hero">
+    <p class="section-label">ОФОРМИТЬ ЗАКАЗ</p>
+    <h1>Купить <span style="background:linear-gradient(135deg,#9B30FF,#B54CFF);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text">GoreKthron</span></h1>
+    <p>Мгновенная доставка на email после оплаты</p>
+  </div>
+
+  <div class="buy-layout">
+
+    <!-- LEFT COLUMN -->
+    <div class="buy-left">
+
+      <!-- 1. Plan Selection -->
+      <div class="plan-selection checkout-section">
+        <h2>1. Выберите план</h2>
+        <div class="plan-cards">
+          <div class="plan-card" data-plan="0">
+            <div class="plan-name">30 ДНЕЙ</div>
+            <div class="plan-price-big">$9.99</div>
+            <div class="plan-duration">/ 30 дней</div>
+            <div class="plan-check"></div>
+          </div>
+          <div class="plan-card selected" data-plan="1">
+            <div class="plan-name">90 ДНЕЙ</div>
+            <div class="plan-price-big">$19.99</div>
+            <div class="plan-duration">/ 90 дней</div>
+            <div class="plan-check">✓</div>
+          </div>
+          <div class="plan-card" data-plan="2">
+            <div class="plan-name">НАВСЕГДА</div>
+            <div class="plan-price-big">$49.99</div>
+            <div class="plan-duration">единоразово</div>
+            <div class="plan-check"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 2. Checkout Form -->
+      <div class="checkout-section">
+        <h2>2. Ваши данные</h2>
+        <form class="checkout-form">
+          <div class="form-grid">
+
+            <div class="form-field">
+              <input type="text" id="hwid" name="hwid" placeholder=" " required autocomplete="off" />
+              <label for="hwid">HWID</label>
+              <div class="field-hint">
+                Как узнать HWID?
+                <button type="button" class="tooltip-btn">?</button>
+              </div>
+            </div>
+
+            <div class="form-grid form-grid-2">
+              <div class="form-field">
+                <input type="text" id="mc_user" name="mc_user" placeholder=" " required autocomplete="off" />
+                <label for="mc_user">Minecraft Username</label>
+              </div>
+              <div class="form-field">
+                <input type="email" id="email" name="email" placeholder=" " required autocomplete="email" />
+                <label for="email">Email</label>
+              </div>
+            </div>
+
+            <div class="form-field">
+              <input type="text" id="discord" name="discord" placeholder=" " autocomplete="off" />
+              <label for="discord">Discord (необязательно)</label>
+            </div>
+
+          </div>
+        </form>
+      </div>
+
+      <!-- 3. Payment Method -->
+      <div class="checkout-section">
+        <h2>3. Способ оплаты</h2>
+        <div class="payment-methods">
+          <div class="payment-card selected" data-method="0">
+            <div class="payment-icon">₿</div>
+            <div class="payment-name">Крипто</div>
+            <div class="payment-sub">BTC / ETH</div>
+          </div>
+          <div class="payment-card" data-method="1">
+            <div class="payment-icon">🅿</div>
+            <div class="payment-name">PayPal</div>
+            <div class="payment-sub">Мгновенно</div>
+          </div>
+          <div class="payment-card" data-method="2">
+            <div class="payment-icon">💳</div>
+            <div class="payment-name">Карта</div>
+            <div class="payment-sub">Скоро</div>
+          </div>
+        </div>
+
+        <div class="crypto-details show">
+          <div class="crypto-address">
+            <label>BITCOIN (BTC)</label>
+            <div class="address-row">
+              <code>bc1qxy2kgdygjrsqtzq2n0yrf2493p83kkfjhx0wlh</code>
+              <button class="copy-btn" type="button">Copy</button>
+            </div>
+          </div>
+          <div class="crypto-address">
+            <label>ETHEREUM (ETH)</label>
+            <div class="address-row">
+              <code>0x71C7656EC7ab88b098defB751B7401B5f6d8976F</code>
+              <button class="copy-btn" type="button">Copy</button>
+            </div>
+          </div>
+          <p style="color:var(--text-secondary);font-size:0.8rem;margin-top:0.5rem">
+            После оплаты отправьте скриншот транзакции в Discord поддержку.
+          </p>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- RIGHT SIDEBAR -->
+    <aside class="order-sidebar">
+      <h3>ИТОГО</h3>
+      <div class="order-lines">
+        <div class="order-line">
+          <span class="label">План</span>
+          <span class="value summary-plan">90 Дней</span>
+        </div>
+        <div class="order-line">
+          <span class="label">HWID Защита</span>
+          <span class="value" style="color:var(--purple-glow)">✦ Включено</span>
+        </div>
+        <div class="order-line">
+          <span class="label">Обновления</span>
+          <span class="value" style="color:var(--purple-glow)">✦ Включено</span>
+        </div>
+        <div class="order-line">
+          <span class="label">Поддержка 24/7</span>
+          <span class="value" style="color:var(--purple-glow)">✦ Включено</span>
+        </div>
+      </div>
+      <div class="order-total">
+        <span class="label">ИТОГО</span>
+        <span class="value summary-total">$19.99</span>
+      </div>
+      <button class="btn-purchase" type="button">
+        <span class="btn-text">КУПИТЬ СЕЙЧАС</span>
+        <div class="btn-loader"></div>
+      </button>
+      <div class="sidebar-trust">
+        <div class="trust-item">🔒 Мгновенная доставка на email</div>
+        <div class="trust-item">🛡️ HWID защита включена</div>
+        <div class="trust-item">⚡ Поддержка в Discord 24/7</div>
+        <div class="trust-item">🔄 0 детекций гарантировано</div>
+      </div>
+    </aside>
+
+  </div>
+</div>
+
+<!-- ══ SUCCESS OVERLAY ═══════════════════════════════════════════ -->
+<div class="success-overlay">
+  <div class="success-box">
+    <div class="success-icon">✓</div>
+    <h2>Оплата принята!</h2>
+    <p>Ваш заказ обрабатывается. Лицензия будет отправлена на указанный email в течение нескольких минут.</p>
+    <div class="success-steps">
+      <ol>
+        <li>Проверьте email — там инструкция по активации</li>
+        <li>Скачайте GoreKthron по ссылке в письме</li>
+        <li>Запустите клиент и введите лицензионный ключ</li>
+        <li>При проблемах — напишите нам в Discord</li>
+      </ol>
+    </div>
+    <button class="success-close">ПОНЯТНО</button>
+  </div>
+</div>
+
+<footer>
+  <div class="footer-bottom" style="max-width:1200px;margin:0 auto">
+    <p class="footer-copy">© 2025 GoreKthron. Все права защищены.</p>
+    <div class="social-links">
+      <a href="#" class="social-link" aria-label="Discord">⚡</a>
+      <a href="#" class="social-link" aria-label="Telegram">✈</a>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

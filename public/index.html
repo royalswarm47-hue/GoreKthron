@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GoreKthron — Minecraft Cheat Client</title>
+  <meta name="description" content="GoreKthron — самый мощный Minecraft чит-клиент нового поколения. 0 детекций, 2000+ пользователей." />
+  <meta property="og:title" content="GoreKthron — Minecraft Cheat Client" />
+  <meta property="og:description" content="Доминируй на каждом сервере" />
+  <link rel="icon" href="favicon.ico" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700&family=Rajdhani:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- ══ NAV ══════════════════════════════════════════════════════ -->
+<nav>
+  <a href="index.html" class="nav-logo">GOREKTHRON</a>
+  <ul class="nav-links">
+    <li><a href="#features" data-i18n="nav_features">Функции</a></li>
+    <li><a href="#showcase" data-i18n="nav_showcase">Галерея</a></li>
+    <li><a href="#pricing" data-i18n="nav_pricing">Цены</a></li>
+    <li><a href="#faq" data-i18n="nav_faq">FAQ</a></li>
+  </ul>
+  <div class="nav-right">
+    <div class="lang-switcher">
+      <button class="lang-btn" data-lang="ru">RU</button>
+      <button class="lang-btn" data-lang="en">EN</button>
+    </div>
+    <a href="buy.html" class="nav-cta" data-i18n="nav_buy">Купить</a>
+    <button class="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- Mobile Menu -->
+<div class="mobile-menu">
+  <button class="mobile-close">✕</button>
+  <a href="#features" data-i18n="nav_features">Функции</a>
+  <a href="#showcase" data-i18n="nav_showcase">Галерея</a>
+  <a href="#pricing" data-i18n="nav_pricing">Цены</a>
+  <a href="#faq" data-i18n="nav_faq">FAQ</a>
+  <a href="buy.html" class="nav-cta" data-i18n="nav_buy">Купить</a>
+</div>
+
+<!-- ══ HERO ═════════════════════════════════════════════════════ -->
+<section id="hero">
+  <canvas id="canvas-hero"></canvas>
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <div class="hero-badge" data-i18n="hero_badge">VERSION 2.4 • UNDETECTED</div>
+    <h1 class="hero-title">GOREKTHRON</h1>
+    <p class="hero-subtitle" data-i18n="hero_sub">Доминируй на <span>каждом сервере</span></p>
+    <div class="hero-buttons">
+      <a href="buy.html" class="btn-primary" data-i18n="hero_cta1">НАЧАТЬ</a>
+      <a href="#features" class="btn-secondary" data-i18n="hero_cta2">УЗНАТЬ БОЛЬШЕ</a>
+    </div>
+  </div>
+  <div class="scroll-indicator">
+    <span data-i18n="hero_scroll">ПРОКРУТИТЬ</span>
+    <div class="scroll-chevron"></div>
+  </div>
+</section>
+
+<!-- ══ FEATURES ══════════════════════════════════════════════════ -->
+<section id="features">
+  <div class="text-center">
+    <p class="section-label" data-i18n="feat_label">ФУНКЦИИ</p>
+    <h2 class="section-title" data-i18n="feat_title">Полный <span>арсенал</span></h2>
+    <p class="section-desc" data-i18n="feat_desc">Продуманные инструменты для абсолютного контроля над игрой</p>
+  </div>
+  <div class="features-grid">
+    <!-- Populated by JS -->
+  </div>
+</section>
+
+<!-- ══ STATS ═════════════════════════════════════════════════════ -->
+<section id="stats">
+  <div class="text-center">
+    <p class="section-label" data-i18n="stats_label">СТАТИСТИКА</p>
+    <h2 class="section-title" data-i18n="stats_title">Нам <span>доверяют</span></h2>
+    <p class="section-desc" data-i18n="stats_desc">Присоединяйтесь к тысячам игроков по всему миру</p>
+  </div>
+  <div class="stats-grid">
+    <!-- Populated by JS -->
+  </div>
+</section>
+
+<!-- ══ SHOWCASE ══════════════════════════════════════════════════ -->
+<section id="showcase">
+  <div class="text-center">
+    <p class="section-label" data-i18n="showcase_label">ГАЛЕРЕЯ</p>
+    <h2 class="section-title" data-i18n="showcase_title">Посмотри <span>в деле</span></h2>
+    <p class="section-desc" data-i18n="showcase_desc">Скриншоты интерфейса и модулей GoreKthron</p>
+  </div>
+  <div class="carousel-wrapper">
+    <div class="carousel-3d">
+      <!-- Populated by JS -->
+    </div>
+    <div class="carousel-reflection"></div>
+    <div class="carousel-controls">
+      <button class="carousel-btn carousel-prev">&#8592;</button>
+      <div class="carousel-dots"></div>
+      <button class="carousel-btn carousel-next">&#8594;</button>
+    </div>
+  </div>
+</section>
+
+<!-- ══ PRICING ═══════════════════════════════════════════════════ -->
+<section id="pricing">
+  <div class="text-center">
+    <p class="section-label" data-i18n="pricing_label">ЦЕНЫ</p>
+    <h2 class="section-title" data-i18n="pricing_title">Выбери <span>план</span></h2>
+    <p class="section-desc" data-i18n="pricing_desc">Гибкие условия для каждого игрока</p>
+  </div>
+  <div class="pricing-grid">
+    <!-- Populated by JS -->
+  </div>
+</section>
+
+<!-- ══ TESTIMONIALS ══════════════════════════════════════════════ -->
+<section id="testimonials">
+  <div class="text-center" style="margin-bottom:3rem">
+    <p class="section-label" data-i18n="testimonials_label">ОТЗЫВЫ</p>
+    <h2 class="section-title" data-i18n="testimonials_title">Что говорят <span>игроки</span></h2>
+  </div>
+  <div class="testimonials-track-wrapper">
+    <div class="testimonials-track">
+      <!-- Populated by JS -->
+    </div>
+  </div>
+</section>
+
+<!-- ══ FAQ ═══════════════════════════════════════════════════════ -->
+<section id="faq">
+  <div class="text-center">
+    <p class="section-label" data-i18n="faq_label">FAQ</p>
+    <h2 class="section-title" data-i18n="faq_title">Частые <span>вопросы</span></h2>
+  </div>
+  <div class="faq-list">
+    <!-- Populated by JS -->
+  </div>
+</section>
+
+<!-- ══ FOOTER ════════════════════════════════════════════════════ -->
+<footer>
+  <div class="footer-content">
+    <div class="footer-brand">
+      <span class="nav-logo">GOREKTHRON</span>
+      <p data-i18n="footer_tagline">Самый мощный Minecraft чит-клиент нового поколения.</p>
+    </div>
+    <div class="footer-col">
+      <h4 data-i18n="footer_links">Ссылки</h4>
+      <ul class="footer-links-list"></ul>
+    </div>
+    <div class="footer-col">
+      <h4 data-i18n="footer_support">Поддержка</h4>
+      <ul class="footer-support-list"></ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p class="footer-copy">© 2025 GoreKthron. Все права защищены.</p>
+    <div class="social-links">
+      <a href="#" class="social-link" aria-label="Discord">⚡</a>
+      <a href="#" class="social-link" aria-label="Telegram">✈</a>
+      <a href="#" class="social-link" aria-label="Twitter">𝕏</a>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
